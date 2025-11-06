@@ -14,10 +14,8 @@
       "env": {
         "EXPO_NO_KOTLIN_WARNING": "1",
         "EXPO_USE_SYSTEM_KOTLIN": "true",
-        "EXPO_NO_DOTENV": "true"
-      },
-      "hooks": {
-        "pre-install": "bash .eas/hooks/eas-build-pre-install.sh"
+        "EXPO_NO_DOTENV": "true",
+        "EAS_DISABLE_NPM_CI": "1"
       }
     }
   },
