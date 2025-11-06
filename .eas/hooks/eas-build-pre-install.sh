@@ -1,13 +1,8 @@
 #!/bin/bash
 set -e
-
-echo "🧹 Cleaning node_modules and lockfile..."
+echo "⚙️ Running EAS pre-install hook..."
 rm -rf node_modules package-lock.json
-
-echo "🧼 Clearing npm cache..."
 npm cache clean --force
+npm install --legacy-peer-deps --force
+echo "✅ Finished installing dependencies."
 
-echo "📦 Installing dependencies with --legacy-peer-deps..."
-npm install --legacy-peer-deps
-
-echo "✅ Dependencies installed successfully."
